@@ -10,7 +10,9 @@ const  MONGO="mongodb://localhost:27017/test";
 
 // app.use(bodyparser.json());
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({
+    extended:true
+}));
 
 app.use('/',routes)
 

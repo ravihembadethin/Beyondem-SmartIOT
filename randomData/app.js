@@ -11,7 +11,7 @@ const sensorId=[1122,3344,4455,6677,8899];
 function getTempData() {
     var tempData = {
         name: faker.random.arrayElement(sensorNames),
-        deviceID: faker.random.arrayElement(sensorId),
+        deviceID: null,
         type: "TEMP",
         data: {
             battery: faker.datatype.float({
@@ -40,7 +40,7 @@ function getTempData() {
 function getAccelData() {
     const accelData = {
         name: faker.random.arrayElement(sensorNames),
-        deviceID: faker.random.arrayElement(sensorId),
+        deviceID: null,
         type: "ACCEL",
         data: {
             rms1: faker.datatype.float({
@@ -78,7 +78,7 @@ function getVibData() {
    
     var vibrationData = {
         name: faker.random.arrayElement(sensorNames),
-        deviceID: faker.random.arrayElement(sensorId),
+        deviceID: null,
         type: "VIB",
         sample_rate: 25600,
         data: {

@@ -12,7 +12,7 @@ npm start
 
 # Run below command in another terminal for Random data  
 
-cd randomData
+cd /randomData
 node app.js
 
 # API's : please import below collection file in postman to call API,s
